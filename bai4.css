@@ -1,0 +1,88 @@
+ *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container {
+  padding: 20px;
+}
+.header {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.child-header {
+  background-color: #c26700;
+  width: 50%;
+  height: 50px;
+}
+.acticarl {
+  height: 300px;
+  background-color: #aabc00;
+  margin-bottom: 20px;
+}
+
+.parent {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.child {
+  background-color: #3271b8;
+  width: 33.33%;
+  height: 150px;
+}
+.parent-1 {
+  display: flex;
+  gap: 20px;
+}
+.child-1 {
+  height: 150px;
+  background-color: #e3e3e3;
+  width: 25%;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .child-header {
+    width: 100%;
+  }
+  .parent {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .child {
+    width: 100%;
+  }
+  .parent-1 {
+    flex-wrap: wrap;
+  }
+  .child-1 {
+    flex-grow: 1;
+    width: calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .child-header {
+    width: 100%;
+  }
+  .parent {
+    flex-direction: column;
+  }
+  .child {
+    width: 100%;
+  }
+  .parent-1 {
+    flex-direction: column;
+  }
+  .child-1 {
+    width: 100%;
+  }
+}
